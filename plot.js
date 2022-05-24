@@ -12,7 +12,8 @@ var data = [
 ];
 
 var layout = {
-	title: "London to NYC Great Circle",
+	// title: "London to NYC Great Circle",
+    autosize: true,
 	showlegend: false,
 	geo: {
 		projection: {
