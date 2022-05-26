@@ -37,11 +37,11 @@ var layout = {
             showgrid: true,
             gridcolor: 'rgb(102, 102, 102)'
         },
-		bgcolor: 'rgb(0,0,0)',
+		bgcolor: 'rgb(20,22,22)',
 	},
 	margin: { l: 0, r: 0, t: 0, b: 0 },
-	paper_bgcolor: 'rgb(0,0,0)',
-	plot_bgcolor: 'rgb(0,0,0)',
+	paper_bgcolor: 'rgb(20,22,22)',
+	plot_bgcolor: 'rgb(20,22,22)',
 };
 
 Plotly.newPlot("globe", data, layout);
