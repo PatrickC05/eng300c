@@ -12,7 +12,6 @@ var data = [
 ];
 
 var layout = {
-	// title: "London to NYC Great Circle",
     autosize: true,
 	showlegend: false,
 	geo: {
@@ -24,11 +23,11 @@ var layout = {
 			},
 		},
 		showocean: true,
-        oceancolor: 'rgb(0, 255, 255)',
+        oceancolor: 'rgb(127, 205, 255)',
         showland: true,
-        landcolor: 'rgb(230, 145, 56)',
+        landcolor: 'rgb(0, 192, 0)',
         showlakes: true,
-        lakecolor: 'rgb(0, 255, 255)',
+        lakecolor: 'rgb(127, 205, 255)',
         showcountries: true,
         lonaxis: {
             showgrid: true,
@@ -39,6 +38,7 @@ var layout = {
             gridcolor: 'rgb(102, 102, 102)'
         }
 	},
+	margin: { l: 0, r: 0, t: 0, b: 0 },
 };
 
 Plotly.newPlot("myDiv", data, layout);
