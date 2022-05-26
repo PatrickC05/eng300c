@@ -1,4 +1,21 @@
 body {
     overflow: hidden;
     background-color: #141416;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+input {
+    text-align: center;
+    margin: auto;
+    width: 40%;
+}
+
+form {
+    text-align: center;
+    padding-top: 2%;
+}
+
+div {
+    text-align: center;
 }

@@ -6,12 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="globe">
+    </div>
+    <form id="slide">
+        <input type="range" min="0" max="50" value="10" class="slider" id="slider" step="1"/>
+    </form>
+    <div>
+        <h3>Friends per person: <span id="num">10</span></h3>
+    </div>
     <script src="plot.js"></script>
 </body>
 </html>

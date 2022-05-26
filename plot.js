@@ -45,3 +45,8 @@ var layout = {
 };
 
 Plotly.newPlot("globe", data, layout);
+
+document.querySelector("#slider").addEventListener("input", function(e) {
+	var value = e.target.value;
+	document.querySelector("#num").innerHTML = value;
+});
