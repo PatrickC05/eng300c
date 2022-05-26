@@ -36,9 +36,12 @@ var layout = {
         lataxis: {
             showgrid: true,
             gridcolor: 'rgb(102, 102, 102)'
-        }
+        },
+		bgcolor: 'rgb(0,0,0)',
 	},
 	margin: { l: 0, r: 0, t: 0, b: 0 },
+	paper_bgcolor: 'rgb(0,0,0)',
+	plot_bgcolor: 'rgb(0,0,0)',
 };
 
 Plotly.newPlot("globe", data, layout);
