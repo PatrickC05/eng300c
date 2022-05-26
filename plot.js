@@ -41,4 +41,4 @@ var layout = {
 	margin: { l: 0, r: 0, t: 0, b: 0 },
 };
 
-Plotly.newPlot("myDiv", data, layout);
+Plotly.newPlot("globe", data, layout);
