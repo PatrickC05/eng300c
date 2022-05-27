@@ -1,7 +1,8 @@
 const initial_point = [40.7127, -74.0059];
 const OPACITY = 0.5;
 const START = 10;
-const WIDTH = 0.5;
+const WIDTH = 0.75;
+const RED = "rgb(180,75,75)";
 let current_points = [];
 var data = [];
 
@@ -21,7 +22,7 @@ for (let i = 0; i < START; i++) {
 		mode: "lines",
 		line: {
 			width: WIDTH,
-			color: "red",
+			color: RED,
 		},
 		opacity: OPACITY,
 	});
@@ -39,7 +40,7 @@ for (point of current_points) {
 			mode: "lines",
 			line: {
 				width: WIDTH,
-				color: "blue",
+				color: RED,
 			},
 			opacity: OPACITY,
 		});
@@ -64,14 +65,14 @@ var layout = {
         showlakes: true,
         lakecolor: 'rgb(100, 180, 230)',
         showcountries: true,
-        lonaxis: {
-            showgrid: true,
-            gridcolor: 'rgb(102, 102, 102)'
-        },
-        lataxis: {
-            showgrid: true,
-            gridcolor: 'rgb(102, 102, 102)'
-        },
+        // lonaxis: {
+        //     showgrid: true,
+        //     gridcolor: 'rgb(102, 102, 102)'
+        // },
+        // lataxis: {
+        //     showgrid: true,
+        //     gridcolor: 'rgb(102, 102, 102)'
+        // },
 		bgcolor: 'rgb(20,22,22)',
 	},
 	margin: { l: 0, r: 0, t: 0, b: 0 },
@@ -100,7 +101,7 @@ document.querySelector("#slider").addEventListener("change", function(e) {
 			mode: "lines",
 			line: {
 				width: WIDTH,
-				color: "red",
+				color: RED,
 			},
 			opacity: OPACITY,
 		});
@@ -118,7 +119,7 @@ document.querySelector("#slider").addEventListener("change", function(e) {
 				mode: "lines",
 				line: {
 					width: WIDTH,
-					color: "blue",
+					color: RED,
 				},
 				opacity: OPACITY
 			});
