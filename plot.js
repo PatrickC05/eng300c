@@ -1,6 +1,6 @@
 const initial_point = [40.7127, -74.0059];
 const OPACITY = 0.5;
-const START = 10;
+const START = 15;
 const WIDTH = 0.75;
 const RED = "rgb(180,75,75)";
 let current_points = [];
