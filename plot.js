@@ -3,18 +3,17 @@ const OPACITY = 0.5;
 const START = 15;
 const WIDTH = 0.75;
 const RED = "rgb(180,75,75)";
+const NUM_POINTS = cities.length;
 let current_points = [];
 var data = [];
 
 function gen_point(point) {
-	let new_lat = Math.random()*360-180;
-	let new_lon = Math.random()*360-180;
-	return [new_lat, new_lon];
+	const random = Math.floor(Math.random() * NUM_POINTS);
+	return [cities[random].lat, cities[random].lng];
 }
 
 for (let i = 0; i < START; i++) {
 	let new_point = gen_point(initial_point);
-	console.log(new_point);
 	data.push({
 		type: "scattergeo",
 		lat: [initial_point[0], new_point[0]],
