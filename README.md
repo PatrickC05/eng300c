@@ -1,2 +1,2 @@
 # eng300c
-data from https://github.com/lutangar/cities.json
+list of cities from https://github.com/lutangar/cities.json
