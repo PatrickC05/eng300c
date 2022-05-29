@@ -79,7 +79,6 @@ var layout = {
 	paper_bgcolor: 'rgb(20,22,22)',
 	plot_bgcolor: 'rgb(20,22,22)',
 };
-console.log(data)
 Plotly.newPlot("globe", data, layout);
 
 document.querySelector("#slider").addEventListener("input", function(e) {
@@ -91,7 +90,6 @@ document.querySelector("#slider").addEventListener("change", function(e) {
 	var mydata = [];
 	var mycurrent_points = [];
 	var value = e.target.value;
-	console.log(value);
 	for (let i = 0; i < value; i++) {
 		let new_point = gen_point(initial_point);
 		mydata.push({
@@ -126,5 +124,4 @@ document.querySelector("#slider").addEventListener("change", function(e) {
 		}
 	}
 	Plotly.newPlot("globe", mydata, layout);
-	console.log(mydata)
 });
